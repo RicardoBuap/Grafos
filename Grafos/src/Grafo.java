@@ -47,4 +47,15 @@ public class Grafo {
             System.out.println("");
         }
     }
+
+    public int primero(int vertice){
+        int adyacente = 0;
+        for(int i=0; i<tamaño; i++){
+            if(matrizAdyacencia[vertice][i] == 1){
+                adyacente = i;
+                break;
+            }
+        }
+        return adyacente;
+    }
 }
